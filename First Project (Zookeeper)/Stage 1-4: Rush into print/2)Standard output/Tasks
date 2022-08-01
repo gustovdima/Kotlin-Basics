@@ -1,1 +1,93 @@
-qwe
+1. Take a look at the following Kotlin code snippet:
+
+fun main() {
+  System.out.printf(1, 2, 3...)
+  printLine("Line print here ")
+  lnPrint(42)
+  printLn("Pay attention to")
+  println("syntax")
+}
+Without deleting any lines, correct the code so that you get the following output :
+
+1, 2, 3...
+Line print here 42
+Pay attention to syntax
+
+
+Solution :
+
+fun main() {
+    System.out.println("1, 2, 3...")
+    print("Line print here ")
+    println(42)
+    print("Pay attention to ")
+    print("syntax")
+}
+
+
+
+2. Write a program that prints numbers from 0 to 9 including 9. Each number must be printed on a new line.
+For your solution, use the provided template.
+
+
+fun main() {
+    println(0)
+    println(1)
+    println(2)
+    println(3)
+    println(4)
+    println(5)
+    println(6)
+    println(7)
+    println(8)
+    println(9)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
