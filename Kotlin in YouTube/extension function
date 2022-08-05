@@ -1,0 +1,31 @@
+object Main {
+
+    //Напишите экстеншн функцию добавления элемна в List и если пользователь добавляет элемент который уже есть в списке то не добавлять его.
+
+    @JvmStatic
+    fun main(args:Array<String>){
+        val x = UniqueList<String>()
+        x.add("1")
+        x.add("2")
+        x.add("3")
+        x.add("1")
+        print(x)
+    }
+}
+
+
+
+
+import java.util.ArrayList;
+
+public class UniqueList<T> extends ArrayList<T> {
+
+    @Override
+    public boolean add(T t) {
+        boolean result = false;
+        if(!contains(t)){
+            result = super.add(t);
+        }
+        return result;
+    }
+}
